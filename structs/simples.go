@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+type Vertex struct {
+	X int
+	Y int
+}
+
 type user struct {
 	name string
 	age int
@@ -13,6 +18,10 @@ type event struct {
 }
 
 func main() {
+	v := Vertex{1, 2}
+	v.X = 4
+	fmt.Println(v.X)
+
 	// user
 	fmt.Println(user{"leo", 23, 1.77})
 
